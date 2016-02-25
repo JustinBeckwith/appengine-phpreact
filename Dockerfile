@@ -1,0 +1,1 @@
+FROM gcr.io/php-mvm-a/php-nginx:latest

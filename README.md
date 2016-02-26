@@ -36,4 +36,4 @@ This is a simple guide to running phpreact on Google App Engine.
     gcloud preview app deploy
     ```
 
-You are now running PHP React on App Engine. How cool is that?  Check it out at [https://phpreact.cloudnibbles.appspot.com/](https://phpreact.cloudnibbles.appspot.com/).
+You are now running PHP React on App Engine. How cool is that?  Check it out at [https://phpreact-dot-cloudnibbles.appspot.com](https://phpreact-dot-cloudnibbles.appspot.com).

@@ -14,7 +14,11 @@ This is a simple guide to running phpreact on Google App Engine.
 3. Create a `Dockerfile` in the root of your application with the following contents:
 
     ```dockerfile
-    FROM gcr.io/php-mvm-a/php-nginx:latest
+    FROM php:7-cli
+    COPY . /app
+    WORKDIR /app
+    EXPOSE 8080
+    CMD ["php", "index.php"]
     ```
 4. Create a project in the [Google Developers Console](https://console.developers.google.com/).
 
@@ -32,4 +36,4 @@ This is a simple guide to running phpreact on Google App Engine.
     gcloud preview app deploy
     ```
 
-You are now running PHP React on App Engine. How cool is that?  Check it out at [https://phpreact-demo.appspot.com/](https://phpreact-demo.appspot.com/).
+You are now running PHP React on App Engine. How cool is that?  Check it out at [https://phpreact.cloudnibbles.appspot.com/](https://phpreact.cloudnibbles.appspot.com/).

@@ -19,5 +19,6 @@ $http = new React\Http\Server($socket);
 
 $http->on('request', $app);
 
-$socket->listen(8080);
+$socket->listen(8080, "0.0.0.0");
+echo "Running phpreact on 8080\n";
 $loop->run();

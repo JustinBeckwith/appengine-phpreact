@@ -1,1 +1,5 @@
-FROM gcr.io/php-mvm-a/php-nginx:latest
+FROM php:7-cli
+COPY . /app
+WORKDIR /app
+EXPOSE 8080
+CMD ["php", "index.php"]
